@@ -1,0 +1,140 @@
+.work {
+	background: url(../img/bg-work.jpg);
+	background-size: cover;
+
+	&-portfolio-row {
+		height: 101px;
+		border-bottom: 1px solid #94b963;
+		border-top: 1px solid #94b963;
+	}
+
+	&-portfolio__selectors ul {
+		margin: 0;
+	}
+	&-portfolio-title {
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	&-portfolio__selectors-btn a {
+		font-size: 16px;
+		font-weight: 700;
+		display: inline-block;
+		height: 35px;
+		line-height: 35px;
+		min-width: 110px;
+		color: #fff;
+		text-decoration: none;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: #f5c149;
+		}
+	}
+
+	&-portfolio__img {
+		padding: 47px 0 87px;
+
+		&__item-pict {
+			width: 260px;
+			height: 200px;
+			border-radius: 4px 4px 0 0;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		&__item-text {
+			height: 50px;
+			width: 260px;
+			background-color: #fff;
+			border-radius: 0 0 4px 4px;
+			position: relative;
+
+			p {
+				line-height: 50px;
+				color:  #727272;
+				font-size: 14px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+
+			&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			border: 15px solid transparent;
+			width: 30px;
+			height: 30px;
+			border-bottom-color: #fff;
+			top: -30px;
+			left: calc(50% - 15px);
+			z-index: 10;
+			
+		}
+		}
+	}
+}
+.work-portfolio__img-wrapper {
+	padding: 0;
+}
+
+.selector-btn--active {
+	background-color: #f5c149;
+	border-radius: 5px;
+}
+.work-portfolio__img-wrapper {
+
+}
+.work-portfolio__img__item {
+	cursor: pointer;
+	
+}
+.work-portfolio__img__item-pict {
+	position: relative;
+
+}
+ .work-portfolio__img__item-text {
+	margin-bottom: 20px;
+	margin-right: 20px;
+
+}
+.work-portfolio__img__item-hover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	opacity: 0;
+	background-color: #727d64;
+	transition: opacity ease .5s;
+
+	p {
+		display: inline-block;
+		margin: auto;
+		height: 50px;
+		line-height: 40px;
+		width: 50px;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		transform: translateY(75px);
+		font-size: 48px;
+		font-weight: 300;
+		color: #fff;
+
+		
+	}
+	
+
+	&:hover {
+		opacity: .7;
+	}
+}
+.masonry-sizer {
+	width: 250px;
+}
